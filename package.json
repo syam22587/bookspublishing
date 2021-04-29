@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "build-deploy": "tsc && cp package.json ./build/ && cd build/ && zip ../app.zip . && rm package.json",
-    "start": "nodemon src/app.ts"
+    "start": "nodemon src/app.ts",
+    "stop": "pkill --signal SIGINT data-api"
   },
   "keywords": [],
   "author": "",
